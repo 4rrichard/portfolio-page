@@ -1,0 +1,70 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    color: #bbbbbb;
+    padding: 0 20px;
+
+    background-image: url("https://images.unsplash.com/photo-1653163061406-730a0df077eb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=996");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .title--hero {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(32px, 5vw, 55px);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero .subtitle--hero {
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-size: clamp(18px, 3vw, 27px);
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.hero .scroll-btns {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.scroll-btn {
+    background-color: #d15c08;
+    border: none;
+    border-radius: 6px;
+    padding: 16px 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.scroll-btn:hover,
+.scroll-btn:focus {
+    background-color: #cd7b40;
+    transform: translateY(-2px);
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero .scroll-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}

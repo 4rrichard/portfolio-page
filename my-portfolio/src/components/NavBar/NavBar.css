@@ -1,0 +1,106 @@
+.navbar {
+    width: 100%;
+    height: 80px;
+    z-index: 3;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #2a2a2a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #bbbbbb;
+}
+
+.navbar .nav--name {
+    font-size: 20px;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar .nav--name:hover,
+.navbar .nav--name:focus {
+    color: #f3f3f3;
+    outline: none;
+}
+
+.navbar .nav--primary {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.navbar .nav--anchor {
+    margin-right: 30px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar .nav--anchor:hover,
+.navbar .nav--anchor:focus {
+    color: #f3f3f3;
+    outline: none;
+}
+
+.hiddenMenuIcon {
+    display: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.hiddenMenuIcon:hover,
+.hiddenMenuIcon:focus {
+    color: #f3f3f3;
+    outline: none;
+}
+
+@media screen and (max-width: 865px) {
+    .navbar .nav--primary {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        max-height: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: #4e4e4e;
+    }
+
+    .navbar .nav--primary.nav--open {
+        max-height: 300px;
+        padding: 20px 0;
+    }
+
+    .navbar .nav--anchors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .navbar .nav--anchor {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .hiddenMenuIcon {
+        display: block;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar .nav--name {
+        font-size: 16px;
+    }
+    .navbar .nav--primary {
+        font-size: 15px;
+    }
+}
