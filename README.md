@@ -7,7 +7,7 @@ Designed to be fast, minimal, and visually consistent across devices.
 
 ## 🚀 Live Demo
 
-🔗 [Visit the Portfolio](https://your-deployment-link.netlify.app)
+🔗 [Visit My Portfolio](https://rr-portfolio-page.netlify.app/)
 
 ---
 
