@@ -13,7 +13,7 @@
     margin: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 45px;
+    font-size: clamp(28px, 5vw, 45px);
     text-align: center;
     border-bottom: 6px solid;
     color: #bbbbbb;

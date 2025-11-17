@@ -21,7 +21,7 @@ function NavBar() {
         <header>
             <nav className="navbar">
                 <Link to="/" onClick={closeNav} className="nav--name">
-                    <h1>RICH RESPERGER</h1>
+                    <h1>PORTFOLIO</h1>
                 </Link>
 
                 <div className={`nav--primary ${navOpen ? "nav--open" : ""}`}>
