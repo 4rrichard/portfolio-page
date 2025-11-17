@@ -37,6 +37,7 @@ function Projects() {
                             />
                             <div className="project-text-container">
                                 <p className="project-text">{project.desc}</p>
+                                {/* temporarily removed until project urls are ready
                                 <button
                                     className="go-to-project-site"
                                     onClick={() =>
@@ -49,6 +50,7 @@ function Projects() {
                                         className="right-arrow"
                                     />
                                 </button>
+                                */}
                             </div>
                         </div>
                         <div className="project-description">
