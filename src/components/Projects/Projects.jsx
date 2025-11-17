@@ -14,18 +14,11 @@ function Projects() {
             desc: "A modern platform for psychologists to showcase services, manage appointments, and communicate with clients.",
         },
         {
-            title: "URL Shortening Website",
-            img: "/images/shortly-website.jpg",
-            url: "https://url-shortening-shortly.netlify.app/",
-            github: "https://github.com/4rrichard/url-shortening-app",
-            desc: "A sleek web app for shortening, copying, and managing URLs with real-time validation.",
-        },
-        {
-            title: "Weather Forecast Website",
-            img: "/images/weather-website.jpg",
-            url: "https://weather-app-codecool.netlify.app/",
-            github: "https://github.com/4rrichard/weather-app-team-project",
-            desc: "A responsive app that displays current and forecasted weather data using the OpenWeather API.",
+            title: "Solar Watch App",
+            img: "/images/solar-watch-website.png",
+            url: "",
+            github: "https://github.com/4rrichard/solar-watch-app",
+            desc: "A full-stack app that lets users register, log in, and view sunrise and sunset times for any city using the OpenWeather API.",
         },
     ];
 
