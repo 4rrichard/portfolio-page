@@ -21,17 +21,15 @@
 
 .projects-container {
     margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
     gap: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project {
-    flex: 40%;
-    max-width: 48%;
-    display: flex;
-    flex-direction: column;
     background-color: #141414;
     overflow: hidden;
     border: 3px solid #bbbbbb;
@@ -49,7 +47,8 @@
 
 .project-img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
     transition: opacity 0.4s ease;
 }
 
@@ -156,6 +155,13 @@
 
     .project {
         max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
     }
 }
 
