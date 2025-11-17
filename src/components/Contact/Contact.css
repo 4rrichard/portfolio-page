@@ -78,10 +78,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .contact .title--contact {
-        font-size: 32px;
-    }
-
     .contact .contact--send-email {
         padding: 40px 20px;
     }
