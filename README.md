@@ -63,6 +63,9 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ```css
 portfolio-page/
+├── .github/
+│   └── workflows/
+│       └── deploy-netlify.yml
 ├── public/
 │   ├── images/
 │   └── pdf/
@@ -82,3 +85,13 @@ portfolio-page/
 ├── vite.config.js
 └── README.md
 ```
+
+## 🧭 TODO / Future Improvements
+
+### ✅ Completed
+- [x] 🧩 **Automated deployment** to Netlify via GitHub Actions
+
+### 🚀 Planned Enhancements
+- [ ] 💼 Add a workflow that **fetches the latest CV** from *OnTheJob* using a GitHub Secret for secure access
+- [ ] 🌗 Add a **dark/light mode toggle** for improved UX and accessibility  
+- [ ] 🔍 Improve **SEO and meta tags** (title, description, Open Graph for social preview)  
